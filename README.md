@@ -1,0 +1,3 @@
+#1. Personal Assistant Alex
+This Python script creates a voice assistant named Alex using libraries like speech_recognition and pyttsx3. Alex listens for commands through the microphone and responds using speech synthesis. Users can ask Alex to play songs on YouTube, check the current time, get information about individuals from Wikipedia, or tell jokes. The assistant greets users and is designed to engage in simple conversations, responding to various commands such as “play,” “time,” “who is,” “joke,” and casual inquiries. If it doesn’t understand a command, Alex apologizes for the confusion.
+
