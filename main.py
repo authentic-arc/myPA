@@ -13,9 +13,8 @@ engine.setProperty('voice', voices[1].id) #voice[0] male
 def talk(text):
     engine.say(text)
     engine.runAndWait()
-'''    engine.say('Hello. I am Alexa')
-    engine.say('How can I help you')'''
-
+    engine.say('Hello. I am alex.')
+    engine.say('How can I help you')
 
 def take_command():
     try:
@@ -24,15 +23,15 @@ def take_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-            if 'alexa' in command:
-                command = command.replace('alexa', '')
+            if 'alex' in command:
+                command = command.replace('alex', '')
                 print(command)
     except:
         pass
     return command
 
 
-def run_alexa():
+def run_alex():
     command = take_command()
     print(command)
     if 'play' in command:
@@ -61,4 +60,4 @@ def run_alexa():
         talk('Im sorry I didnt get that')
 
 
-run_alexa()
+run_alex()
